@@ -30,3 +30,9 @@ data.forEach(task => {
 
 	document.querySelector('.todo').appendChild(li);
 });
+
+document.querySelector('#new-task').addEventListener('keyup', e => {
+	if(e.key === 'Enter'){
+		console.log(e.target.value);
+	};
+});

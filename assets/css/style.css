@@ -33,3 +33,8 @@ body{
     color: #999;
     cursor: not-allowed;
 }
+
+#new-task{
+    width: 100%;
+    padding: 10px;
+}
