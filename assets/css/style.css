@@ -16,6 +16,10 @@ body{
     border-radius: 15px;
     box-shadow: 5px 10px 8px #ded7d7;
 }
+.content-center h1{
+    color: #1a363acc;
+    font-size: 30px;
+}
 
 .content-center input{
     border: none;
@@ -48,6 +52,12 @@ body{
     text-decoration: line-through;
     color: #999;
     cursor: not-allowed;
+}
+.todo i{
+    width: initial;
+    min-width: 30px;
+    float: right;
+    cursor: pointer;
 }
 
 #new-task{

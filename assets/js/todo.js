@@ -11,6 +11,7 @@ function renderTodo(){
 	li.innerHTML = `
 		<input type="checkbox" id="task-${task.id}">
 		<label for="task-${task.id}">${task.title}</label>
+		<i class="far fa-trash-alt fa-lg"></i>
 	`;
 
 	li.querySelector('input').addEventListener("change", e => {
@@ -20,14 +21,17 @@ function renderTodo(){
 		} else {
 			li.classList.remove('complete');
 		}
-		
+
+	});
+
+	li.querySelector('i').addEventListener('click', e => {
+		console.warn("Você deletar esse item?");
 	});
 
 	document.querySelector('.todo').appendChild(li);
 });
 
 }
-
 
 document.querySelector('#new-task').addEventListener('keyup', e => {
 	if(e.key === 'Enter'){
