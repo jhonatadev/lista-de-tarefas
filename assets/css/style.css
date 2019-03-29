@@ -14,6 +14,22 @@ body{
     padding: 20px;
     background: #fff;
     border-radius: 15px;
+    box-shadow: 5px 10px 8px #ded7d7;
+}
+
+.content-center input{
+    border: none;
+    outline: none;
+}
+.content-center input{
+    font-size: 1em;
+    border-bottom-color: #c8a4f9ab;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 10px;
+}
+.content-center input:focus{
+    border-bottom-color: #8f4fe4;
 }
 
 .todo{
