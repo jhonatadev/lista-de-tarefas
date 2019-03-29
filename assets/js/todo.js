@@ -20,5 +20,13 @@ data.forEach(task => {
 		<label for="task-${task.id}">${task.title}</label>
 	`;
 
+	li.querySelector('input').addEventListener("change", e => {
+		if (e.target.checked) {
+			li.classList.add('complete');
+		} else {
+			li.classList.remove('complete');
+		}
+	});
+
 	document.querySelector('.todo').appendChild(li);
 });
